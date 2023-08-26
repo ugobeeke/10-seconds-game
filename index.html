@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>10 Sec Maths Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <script src="application.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 id="title">10 Sec Maths Game</h2>
+          <p class="sub_heading">show off in ten seconds</p>
+          <h3 class="heading" id="time-left">10</h3><br>
+          
+          <h1 class="eqn" id="equation"></h1>
+          <input id="user-input" type="number" placeholder="Answer Here" />
+          <h4 class="eqn">Score:<span id="score"></span></h4>
+          <input class="set-limit" type="number" id="number-limit" min="1" max="100" placeholder="Set-Limit">
+         <select id="question-type">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+         </select>
+          <button id="restart-button">Play Again</button><br><br>
+          <button id="high-score-button">Chech High Score</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
